@@ -1,0 +1,12 @@
+/* 
+ * Task: Generate classes with background images using @import and @each
+ */
+
+ @import '11-photos.scss';
+
+ @each $name in $list-names {
+   .photo-#{$name} {
+     background: image-url("photos/#{$name}.jpg") no-repeat;
+   }
+ }
+  

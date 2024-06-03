@@ -1,0 +1,19 @@
+/* 
+ * Task: Assign margins to body and div tags using a mixin
+ */
+
+ // Define the mixin for setting left and right margins
+ @mixin margin-lr($left-right) {
+   margin-left: $left-right;
+   margin-right: $left-right;
+ }
+ 
+ // Apply the mixin to body and div tags
+ body {
+   @include margin-lr(10px);
+ }
+ 
+ div {
+   @include margin-lr(15px);
+ }
+ 
