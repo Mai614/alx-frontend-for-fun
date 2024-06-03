@@ -1,0 +1,11 @@
+/* Sort and print a list */
+$list_to_sort: john, anna, zoe, kim, felicia, carrie;
+
+// Sort the list alphabetically
+$list_to_sort: sort($list_to_sort);
+
+// Print the sorted list to debug output
+@each $item in $list_to_sort {
+  @debug $item;
+}
+
