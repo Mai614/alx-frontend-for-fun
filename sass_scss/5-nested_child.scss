@@ -1,0 +1,12 @@
+/* 
+ * Task: Assign text color to elements inside body and to the first child element of class .red inside body
+ */
+
+ body {
+  color: #3D3D3D;
+
+  > .red:first-child {
+    color: #FF0000;
+  }
+}
+
